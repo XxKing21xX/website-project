@@ -1,0 +1,577 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(8, 32, 41);
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 100;
+
+}
+.logo{
+    width: 200px;
+    height: 60px;
+    margin-left: 130px;
+
+}
+.list{
+    list-style: none;
+    float: right;
+    margin-right: 150px;
+    margin-top: 18px;
+}
+.list li{
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 20px;
+}
+.list li a {
+    text-decoration:none;
+    color: rgb(247, 247, 247);
+    position: relative;
+    
+
+}
+.list li a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2px;
+    transition: .5s;
+    bottom: 0;
+    left: 0;
+}
+.list li a:hover:after{
+    width: 100%;
+    height: 3px;
+    
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/124d12157752087.Y3JvcCwxODQxLDE0NDAsNDEsMA.webp);
+    background-size: cover;
+    position: relative;
+}
+.background-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+}
+.content{
+    width: 40%;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    text-align: center;
+    color: white;
+}
+.title1{
+    font-size: 60px;
+
+}
+.p1{
+    letter-spacing: 2px;
+    margin: 15px; 
+    color: antiquewhite;
+}
+.btn{
+    width: 125px;
+    height: 45px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 19;
+    margin-right: 12px;
+}
+
+.btn:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.a1{
+    background-color: blue;
+    color: white;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.welcome-content{
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+    position: relative;
+    
+    
+}
+
+.wel1{
+    padding: 50 20;
+    width: 28%;
+    height: 250px;
+    text-align: center;
+    float:right ;
+   margin: 40px;
+    border: solid gray 1px;
+    font-size: 20px;
+    position: relative;
+}
+.i1{
+    font-size: 40px;
+    color: rgb(2, 112, 255);
+
+}
+.wel1 p{
+    color: gray;
+    margin: 10px;
+}
+.wel1 a {
+    margin-bottom: 40px;
+
+}
+.a2{
+    text-decoration: none;
+    color: rgb(0, 153, 255);
+    background-color:none;
+    font-size: 20px;
+}
+.wel1::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+
+}
+.wel1:hover:before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 1s;
+    z-index: -1;
+}
+.wel1:hover {
+    color: white;
+
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.FW-content{
+    background-color: rgba(220, 253, 253, 0.644);
+    overflow: auto;
+    position: relative;
+    margin: auto;
+    margin-top: 250px;
+
+}
+.FW-img{
+    float: right;
+    width: 28%;
+    margin:40px; 
+    position: relative;
+    
+}
+.FW-img img{
+    width: 100%;
+}
+.FW-layout{ 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    visibility: hidden;
+    transition: 1s ;
+    opacity: 0;
+    text-align: center;
+
+    
+    
+}
+.FW-img:hover .FW-layout{ 
+    visibility: visible;
+    opacity: 1;
+
+}
+.FW-t h2{
+    color: white;
+}
+.FW-t{
+    margin-top: 150px;
+    color: rgb(0, 153, 255);
+
+}
+.FW-t i{
+    background-color: rgb(0, 153, 255);
+    font-size: 30px;
+    margin-top: 10px;
+}
+.FW-t p{
+    font-weight: 10px;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.wwo-content{
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+    position: relative;
+    
+    
+}
+
+.wwo{
+    padding: 50 20;
+    width: 28%;
+    height: 250px;
+    float:left ;
+   margin: 40px;
+    border: solid gray 1px;
+    font-size: 20px;
+    position: relative;
+}
+.wwo p{
+    color: gray;
+    margin: 10px;
+    text-align: left;
+}
+
+
+.wwo::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+
+}
+.wwo:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 1s;
+    z-index: -1;
+}
+.wwo:hover {
+    color: white;
+
+}
+.wwo i{
+     font-size: 40px;
+    color: rgb(2, 154, 255);
+    
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.wcu{ 
+    width: 100%;
+    position:relative;
+    overflow:auto;
+    margin: auto;
+    background-color: rgba(216, 255, 255, 0.541);
+}
+.Wcon{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 150px;
+}
+.h2w{
+    text-align: left;
+    font-size: 40px;
+
+ }
+.d1w{
+    background-color: blue;
+    width: 180px;
+    height: 5px;
+    margin: left;
+    margin-top: 10px;
+}
+
+.wcu-content{
+   
+}
+.wcu-t{
+    float:left ;
+    text-align: left;
+}
+.wcu-img{
+    float: right;
+    margin-bottom: 100px;
+}
+.wcu-t p{
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+.wcu-t ul li{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.wcu-t ul li i{
+    color: rgb(0, 140, 255);
+}
+.w-d{
+    text-align: center;
+}
+.w-d li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.w-d li.w-a{
+    background-color: rgb(77, 151, 248);
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.ach{
+    background-image: url(../images/Z3BcMC.webp);
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+}
+.ach-overlay{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.ach-t{
+    float: right;
+    margin-top: 150px;
+    margin-right: 20%;
+}
+.ach-t i{
+    font-size: 50px;
+    color: #6899fd;
+}
+.ach-t h2{
+    font-size: 35px;
+    color: white;
+}
+.ach-t p{
+    color: white;
+    font-size: 18px;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.subs-content{
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    background-color: rgba(216, 255, 255, 0.541);
+}
+.subs{
+    float: left;
+    width: 28%;
+    height: 400px;
+    margin: 40px;
+    text-align: center;
+    color: #000000;
+    border: solid black 1px;
+    position: relative;
+    background-color: rgba(253, 246, 232, 0.685);
+}
+.subs button{
+    background-color: rgb(17, 4, 133);
+    padding: 10px 14px;
+    margin-top: 25px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+
+}
+.subs h2{
+    margin-top: 50px;
+}
+.subs p{
+    margin-top: 7px;
+    font-size: 18px;
+}
+.subs-t{ 
+    overflow: auto;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    margin-top:40px; 
+    color: rgb(255, 255, 255) ;
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 50%;
+    background-color:rgb(17, 4, 133);
+    position: relative;
+}
+.subs .subs-t p{
+    font-size: 23px;
+    margin-top: 25px;
+}
+.subs::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(209, 247, 247);
+    transition: 1s;
+}
+.subs:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 100px;
+ }
+ .w1{
+    margin-bottom:100px ;
+ }
+ .h2{
+    text-align: center;
+    font-size: 40px;
+
+ }
+.d1{
+    background-color: blue;
+    width: 80px;
+    height: 5px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.team-item{
+    float: left;
+    background-color: rgba(202, 244, 255, 0.452);
+    width: 30%;
+    padding: 14 18; 
+    text-align: center;
+    position: relative;
+    
+    
+}
+.ww{
+    margin: 0px 5%;
+}
+.team-image{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-image img{
+    width: 100%;
+    
+}
+.team-overley{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    visibility: hidden;
+    transition: 1s ;
+    opacity: 0;
+}
+.team-item:hover .team-overley{
+    visibility: visible;
+    opacity: 0.9;
+}
+.team-overley a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(98, 207, 243);
+    color: white;
+    font-size: 23px;
+    margin-left: auto;
+}
+.team-overley a i{
+    line-height: 40px;
+}
+.team-info-title{
+    text-transform: capitalize;
+    padding: 12px 0px;
+    
+}
+.team-info-sp1{
+    color: rgb(4, 0, 255);
+}
+.team-item:hover .team-info-title{
+    color: rgb(0, 0, 255);
+}
+.team-item:hover .team-info-sp1{
+    color: rgba(0, 0, 255, 0.342);
+}
+.team-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(61, 61, 61);
+    opacity: 0;
+}
+.team-item:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 3s;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.end{
+    background-color: rgb(173, 255, 255);
+    margin: auto;
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 50px;
+}
+.end i{
+    color: #6195ff;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 40px;
+
+}
+.end p {
+    margin-top: 10px;
+}
+.end i:hover{
+    color: rgb(6, 106, 255);
+}
+
